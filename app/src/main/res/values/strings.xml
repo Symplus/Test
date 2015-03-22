@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Symplus</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_patient_login">Patient Login</string>
+    <string name="title_activity_create_patient_ui">New Patient</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
