@@ -42,7 +42,7 @@ public class MainActivity extends ActionBarActivity{
     }
    */
 
-    public void patientLogin(View view)
+    public void patientLogin(View view) //ignore everything above this line, this method takes you to the next activity on button press
     {
        Intent intent = new Intent(this, PatientLoginActivity.class);
        startActivity(intent);

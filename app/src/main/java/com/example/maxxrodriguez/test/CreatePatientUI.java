@@ -39,9 +39,9 @@ public class CreatePatientUI extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void createPatient(View view)
+    public void createPatient(View view) //ignore everything above this line, this method takes you to the next activity on button press
     {
-        Intent intent = new Intent(this, PatientHomePageActivity.class);
+        Intent intent = new Intent(this, PatientHomePageActivity.class); //All of this code extracts the data the user will write in the text fields
         EditText editText = (EditText) findViewById(R.id.FnLtext);
         String name = editText.getText().toString();
         EditText editText2 = (EditText) findViewById(R.id.dobText);
@@ -52,7 +52,7 @@ public class CreatePatientUI extends ActionBarActivity {
         String email = editText.getText().toString();
         EditText editText5 = (EditText) findViewById(R.id.passwordText);
         String password = editText.getText().toString();
-        if(docID == "")
+        if(docID == "")                                                 //If the patient does not provide a doctor ID then we'll account for that
         {
             Patient newPatient = new Patient(name,dob,email,password);
         }

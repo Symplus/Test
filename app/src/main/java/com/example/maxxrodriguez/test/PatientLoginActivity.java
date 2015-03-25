@@ -40,7 +40,7 @@ public class PatientLoginActivity extends ActionBarActivity  {
         return super.onOptionsItemSelected(item);
     }
 
-    public void createPatient(View view)
+    public void createPatient(View view) //ignore everything above this line, this method takes you to the next activity on button press
     {
         Intent intent = new Intent(this, CreatePatientUI.class);
         startActivity(intent);
