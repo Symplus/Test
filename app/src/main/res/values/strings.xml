@@ -6,5 +6,11 @@
     <string name="title_activity_patient_login">Patient Login</string>
     <string name="title_activity_create_patient_ui">New Patient</string>
     <string name="hello_world">Hello world!</string>
+    <string name="name">First and Last Name</string>
+    <string name="dob">Date of Birth (MM/DD/YYYY)</string>
+    <string name="docID">Doctor Identification Number</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="title_activity_patient_home_page">PatientHomePageActivity</string>
 
 </resources>

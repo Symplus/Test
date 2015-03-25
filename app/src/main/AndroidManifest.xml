@@ -24,6 +24,10 @@
             android:name=".CreatePatientUI"
             android:label="@string/title_activity_create_patient_ui" >
         </activity>
+        <activity
+            android:name=".PatientHomePageActivity"
+            android:label="@string/title_activity_patient_home_page" >
+        </activity>
     </application>
 
 </manifest>

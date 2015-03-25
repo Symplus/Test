@@ -1,9 +1,12 @@
 package com.example.maxxrodriguez.test;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 
 
 public class CreatePatientUI extends ActionBarActivity {
@@ -35,5 +38,28 @@ public class CreatePatientUI extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void createPatient(View view)
+    {
+        Intent intent = new Intent(this, PatientHomePageActivity.class);
+        EditText editText = (EditText) findViewById(R.id.FnLtext);
+        String name = editText.getText().toString();
+        EditText editText2 = (EditText) findViewById(R.id.dobText);
+        String dob = editText.getText().toString();
+        EditText editText3 = (EditText) findViewById(R.id.docIDText);
+        String docID = editText.getText().toString();
+        EditText editText4 = (EditText) findViewById(R.id.emailText);
+        String email = editText.getText().toString();
+        EditText editText5 = (EditText) findViewById(R.id.passwordText);
+        String password = editText.getText().toString();
+        if(docID == "")
+        {
+            Patient newPatient = new Patient(name,dob,email,password);
+        }
+        else
+        {
+            Patient newPatient = new Patient(name,dob,docID,email,password);
+        }
+        startActivity(intent);
     }
 }
