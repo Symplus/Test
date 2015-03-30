@@ -1654,7 +1654,11 @@
       <created>1427678431965</created>
       <updated>1427678431965</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="-added string resources&#10;-added color resources&#10;-added doctor side for all activities">
+      <created>1427678737567</created>
+      <updated>1427678737568</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
