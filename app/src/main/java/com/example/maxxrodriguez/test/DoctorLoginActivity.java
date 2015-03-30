@@ -1,33 +1,35 @@
 package com.example.maxxrodriguez.test;
 
-import android.content.DialogInterface;
+/**
+ * Created by Corey on 3/29/2015.
+ */
+
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
-
-public class MainActivity extends ActionBarActivity{
+public class DoctorLoginActivity extends ActionBarActivity{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_doctor_login);
+        Intent intent  = getIntent();
     }
 
 
-  //  @Override
-    /*public boolean onCreateOptionsMenu(Menu menu) {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_doctor_login, menu);
         return true;
-    }*/
+    }
 
-    //@Override
-  /*  public boolean onOptionsItemSelected(MenuItem item) {
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -40,17 +42,11 @@ public class MainActivity extends ActionBarActivity{
 
         return super.onOptionsItemSelected(item);
     }
-   */
 
-    public void patientLogin(View view) //ignore everything above this line, this method takes you to the next activity on button press
+    public void createDoctor(View view) //ignore everything above this line, this method takes you to the next activity on button press
     {
-       Intent intent = new Intent(this, PatientLoginActivity.class);
-       startActivity(intent);
-    }
-
-    public void doctorLogin(View view)
-    {
-        Intent intent = new Intent(this, DoctorLoginActivity.class);
+        Intent intent = new Intent(this, CreateDoctorUI.class);
         startActivity(intent);
+
     }
 }

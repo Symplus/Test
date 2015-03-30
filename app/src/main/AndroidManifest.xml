@@ -16,17 +16,35 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".PatientLoginActivity"
             android:label="@string/title_activity_patient_login" >
         </activity>
+
         <activity
             android:name=".CreatePatientUI"
             android:label="@string/title_activity_create_patient_ui" >
         </activity>
+
         <activity
             android:name=".PatientHomePageActivity"
             android:label="@string/title_activity_patient_home_page" >
+        </activity>
+
+        <activity
+            android:name=".DoctorHomePageActivity"
+            android:label="@string/title_activity_doctor_home_page">
+        </activity>
+
+        <activity
+            android:name=".CreateDoctorUI"
+            android:label="@string/title_activity_create_doctor_ui">
+        </activity>
+
+        <activity
+            android:name=".DoctorLoginActivity"
+            android:label="@string/title_activity_doctor_login">
         </activity>
     </application>
 
