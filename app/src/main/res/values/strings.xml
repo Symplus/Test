@@ -13,7 +13,7 @@
     <string name="docID">Doctor Identification Number</string>
     <string name="email">Email Address</string>
     <string name="password">Password</string>
-    <string name="title_activity_patient_home_page">PatientHomePageActivity</string>
+    <string name="title_activity_patient_home_page">Welcome</string>
     <string name="title_activity_doctor_home_page">DoctorHomePageActivity</string>
     <string name="patient_sign_in">Sign in as Patient</string>
     <string name="doctor_sign_in">Sign in as Doctor</string>
@@ -24,5 +24,6 @@
     <string name="enter_information">Enter your information</string>
     <string name="continue_button">Continue</string>
     <string name="hospital_name">Hospital Name</string>
+    <string name="title_activity_report">report</string>
 
 </resources>

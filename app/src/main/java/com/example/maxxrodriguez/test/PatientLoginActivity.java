@@ -44,6 +44,5 @@ public class PatientLoginActivity extends ActionBarActivity  {
     {
         Intent intent = new Intent(this, CreatePatientUI.class);
         startActivity(intent);
-
     }
 }
