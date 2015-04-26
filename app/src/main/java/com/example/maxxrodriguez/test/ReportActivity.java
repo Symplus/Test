@@ -4,6 +4,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Toast;
@@ -51,6 +52,7 @@ public class ReportActivity extends ActionBarActivity {
                 textView1.setText("Pain Level: " + progress1);
             }
         });
+
         seekBar2.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
@@ -64,6 +66,7 @@ public class ReportActivity extends ActionBarActivity {
                 textView2.setText("Pain Level: " + progress2);
             }
         });
+
         seekBar3.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
@@ -77,6 +80,7 @@ public class ReportActivity extends ActionBarActivity {
                 textView3.setText("Pain Level: " + progress3);
             }
         });
+
         seekBar4.setOnSeekBarChangeListener(new OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
@@ -127,4 +131,10 @@ public class ReportActivity extends ActionBarActivity {
     }
     Report newReport = new Report(progress1, progress2, progress3, progress4);
 
+
+    public void activityFinish(View view)
+    {
+        finish();
+
+    }
 }
