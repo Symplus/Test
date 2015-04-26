@@ -41,7 +41,7 @@ public class PatientHomePageActivity extends ActionBarActivity {
 
     public void report(View view)
     {
-        Intent intent = new Intent(this, report.class);
+        Intent intent = new Intent(this, ReportActivity.class);
         startActivity(intent);
     }
 }

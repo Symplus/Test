@@ -41,7 +41,7 @@
             android:label="@string/title_activity_doctor_login" >
         </activity>
         <activity
-            android:name=".report"
+            android:name=".ReportActivity"
             android:label="@string/title_activity_report" >
         </activity>
     </application>
